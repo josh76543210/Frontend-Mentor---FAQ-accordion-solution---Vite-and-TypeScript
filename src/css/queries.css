@@ -1,0 +1,59 @@
+/**********************/
+/*     over 352px     */
+/**********************/
+@media only screen and (min-width: 22em) {
+}
+
+/**********************/
+/*     over 384px     */
+/**********************/
+@media only screen and (min-width: 24em) {
+}
+
+/**********************/
+/*     over 448px     */
+/*    FOOTER QUERY    */
+/**********************/
+@media (min-width: 28em) {
+  /* Footer */
+  footer {
+    height: calc((70 / 16) * 1rem);
+
+    flex-direction: row;
+    gap: calc((10 / 16) * 1rem);
+  }
+
+  .boxv {
+    display: inline;
+  }
+}
+
+/**********************/
+/*     over 480px     */
+/**********************/
+@media only screen and (min-width: 30em) {
+}
+
+/**********************/
+/*     over 600px     */
+/**********************/
+@media only screen and (min-width: 37.5em) {
+}
+
+/**********************/
+/*     over 800px     */
+/**********************/
+@media only screen and (min-width: 50em) {
+}
+
+/***********************/
+/*     over 992px     */
+/***********************/
+@media only screen and (min-width: 62em) {
+}
+
+/***********************/
+/*     over 1120px     */
+/***********************/
+@media only screen and (min-width: 70em) {
+}
