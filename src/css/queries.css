@@ -15,6 +15,11 @@
 /*    FOOTER QUERY    */
 /**********************/
 @media (min-width: 28em) {
+  /* Main */
+  main {
+    min-height: calc(100vh - calc((70 / 16) * 1rem));
+  }
+
   /* Footer */
   footer {
     height: calc((70 / 16) * 1rem);
@@ -35,15 +40,13 @@
 }
 
 /**********************/
-/*     over 600px     */
+/*     over 640px     */
 /**********************/
-@media only screen and (min-width: 37.5em) {
-}
-
-/**********************/
-/*     over 800px     */
-/**********************/
-@media only screen and (min-width: 50em) {
+@media only screen and (min-width: 40em) {
+  /* Main */
+  main {
+    background-image: url(../images/background-pattern-desktop.svg);
+  }
 }
 
 /***********************/
