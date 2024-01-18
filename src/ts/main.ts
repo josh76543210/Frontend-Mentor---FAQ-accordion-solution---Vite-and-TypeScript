@@ -30,11 +30,14 @@ function handleFAQ(e: Event) {
   // check if question was clicked
   if (questionEl === null) return;
 
+  // close all faq elements
+  faqEls.forEach((el) => el.classList.remove("open"));
+
   // get faq element
   const faqEl: HTMLParagraphElement | null = (<HTMLElement>e.target).closest(
     ".card__faq"
   );
 
   // toggle faq element
-  faqEl?.classList.toggle("open");
+  faqEl?.classList.add("open");
 }
