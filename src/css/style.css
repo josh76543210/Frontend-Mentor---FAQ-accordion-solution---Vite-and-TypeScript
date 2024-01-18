@@ -89,6 +89,7 @@ main {
 
 /* card faq */
 .card__faq {
+  pointer-events: none;
   padding: calc((20 / 16) * 1rem) 0;
   border-bottom: calc((1.5 / 16) * 1rem) solid var(--light-pink);
 }
@@ -96,6 +97,10 @@ main {
 .card__faq:last-of-type {
   border-bottom: none;
   padding-bottom: 0;
+}
+
+.card__faq:focus {
+  outline: var(--grayish-purple) calc((2 / 16) * 1rem) solid;
 }
 
 .faq__icon {
@@ -110,6 +115,7 @@ main {
 }
 
 .faq__question {
+  pointer-events: all;
   cursor: pointer;
   font-weight: 600;
   padding-right: calc((70 / 16) * 1rem);

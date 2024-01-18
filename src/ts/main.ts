@@ -16,6 +16,22 @@ faqEls.forEach((el) => {
   el.addEventListener("click", handleFAQ);
 });
 
+// if key is pressed
+document.addEventListener("keydown", (e) => {
+  // check if enter is pressed
+  if (e.key !== "Enter") return;
+
+  // get focused element
+  const focusedEl = document.activeElement;
+  console.log(focusedEl);
+
+  // close all faq elements
+  faqEls.forEach((el) => el.classList.remove("open"));
+
+  // open focus element
+  focusedEl?.classList.add("open");
+});
+
 /////////////////////
 // Funtions
 /**
@@ -38,6 +54,6 @@ function handleFAQ(e: Event) {
     ".card__faq"
   );
 
-  // toggle faq element
+  // open faq element
   faqEl?.classList.add("open");
 }
