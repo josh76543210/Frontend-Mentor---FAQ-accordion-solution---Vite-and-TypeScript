@@ -60,8 +60,8 @@ main {
   padding: calc((40 / 16) * 1rem) calc((20 / 16) * 1rem);
   background-image: url(../images/background-pattern-mobile.svg);
   background-repeat: no-repeat;
-  background-size: contain;
-  background-position: top center;
+  background-size: 101%;
+  background-position: top -2px center;
 }
 
 /* card */
